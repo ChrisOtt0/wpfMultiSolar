@@ -40,14 +40,14 @@ namespace wpfMultiSolar
         private void DispatcherMethod()
         {
             DispatcherTimer dt = new DispatcherTimer();
-            Planet p1 = new Planet(mercury, 90, 0.07);
-            Planet p2 = new Planet(venus, 124, 0.04);
-            Planet p3 = new Planet(earth, 148, 0.032);
-            Planet p4 = new Planet(mars, 176, 0.022);
-            Planet p5 = new Planet(jupiter, 267, 0.0065);
-            Planet p6 = new Planet(saturn, 316, 0.0059);
-            Planet p7 = new Planet(uranus, 367, 0.0038);
-            Planet p8 = new Planet(neptune, 402, 0.0013);
+            Planet p1 = new Planet(mercury, 90, 1.59033);
+            Planet p2 = new Planet(venus, 124, 1.17596);
+            Planet p3 = new Planet(earth, 148, 1);
+            Planet p4 = new Planet(mars, 176, 0.8085);
+            Planet p5 = new Planet(jupiter, 267, 0.43889);
+            Planet p6 = new Planet(saturn, 316, 0.32539);
+            Planet p7 = new Planet(uranus, 367, 0.22868);
+            Planet p8 = new Planet(neptune, 402, 0.15917);
             dt.Tick += new EventHandler(p1.MovePlanet1);
             dt.Tick += new EventHandler(p2.MovePlanet1);
             dt.Tick += new EventHandler(p3.MovePlanet1);
@@ -64,14 +64,14 @@ namespace wpfMultiSolar
         {
             TimeSpan dueTime = TimeSpan.Zero;
             TimeSpan interval = TimeSpan.FromMilliseconds(1);
-            Planet p1 = new Planet(mercury, 90, 0.07);
-            Planet p2 = new Planet(venus, 124, 0.04);
-            Planet p3 = new Planet(earth, 148, 0.032);
-            Planet p4 = new Planet(mars, 176, 0.022);
-            Planet p5 = new Planet(jupiter, 267, 0.0065);
-            Planet p6 = new Planet(saturn, 316, 0.0059);
-            Planet p7 = new Planet(uranus, 367, 0.0038);
-            Planet p8 = new Planet(neptune, 402, 0.0013);
+            Planet p1 = new Planet(mercury, 90, 1.59033);
+            Planet p2 = new Planet(venus, 124, 1.17596);
+            Planet p3 = new Planet(earth, 148, 1);
+            Planet p4 = new Planet(mars, 176, 0.8085);
+            Planet p5 = new Planet(jupiter, 267, 0.43889);
+            Planet p6 = new Planet(saturn, 316, 0.32539);
+            Planet p7 = new Planet(uranus, 367, 0.22868);
+            Planet p8 = new Planet(neptune, 402, 0.15917);
             t1 = new Timer(p1.MovePlanet2, null, dueTime, interval);
             t2 = new Timer(p2.MovePlanet2, null, dueTime, interval);
             t3 = new Timer(p3.MovePlanet2, null, dueTime, interval);
@@ -80,7 +80,6 @@ namespace wpfMultiSolar
             t6 = new Timer(p6.MovePlanet2, null, dueTime, interval);
             t7 = new Timer(p7.MovePlanet2, null, dueTime, interval);
             t8 = new Timer(p8.MovePlanet2, null, dueTime, interval);
-
         }
     }
 }

@@ -11,8 +11,8 @@ namespace wpfMultiSolar
     internal class Planet
     {
         Ellipse? body;
-        double x0;
-        double y0;
+        const double x0 = 500;
+        const double y0 = 500;
         double x;
         double y;
         double radius;
@@ -24,10 +24,8 @@ namespace wpfMultiSolar
         public Planet(Ellipse body, double radius, double speed)
         {
             this.body = body;
-            this.x0 = 500;
-            this.y0 = 500;
             this.radius = radius;
-            this.speed = speed / 3;
+            this.speed = (speed / 10) / 3;
             setCoords += SetXY;
         }
 
