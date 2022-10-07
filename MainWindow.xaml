@@ -1,0 +1,119 @@
+﻿<Window x:Class="wpfMultiSolar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpfMultiSolar"
+        mc:Ignorable="d"
+        Title="MainWindow" ResizeMode="NoResize" Height="1000" Width="1000" Loaded="Window_Loaded">
+    <Window.Background>
+        <ImageBrush ImageSource="Resources/space.jpg"/>
+    </Window.Background>
+    <Canvas>
+        <Ellipse
+            x:Name="sun"
+            Width="120"
+            Height="120"
+            Canvas.Left="500"
+            Canvas.Top="500"
+            Fill="#e3ca2b">
+            <Ellipse.RenderTransform>
+                <TranslateTransform X="-60" Y="-60"/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+
+        <Ellipse
+            x:Name="mercury"
+            Width="10"
+            Height="10"
+            Canvas.Left="590"
+            Canvas.Top="500"
+            Fill="#c4650c">
+            <Ellipse.RenderTransform>
+                <TranslateTransform X="-5" Y="-5"/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+        
+        <Ellipse
+            x:Name="venus"
+            Width="8"
+            Height="8"
+            Canvas.Left="612"
+            Canvas.Top="500"
+            Fill="#f0ba7d">
+            <Ellipse.RenderTransform>
+                <TranslateTransform X="-4" Y="-4"/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+
+        <Ellipse
+            x:Name="earth"
+            Width="20"
+            Height="20"
+            Canvas.Left="640"
+            Canvas.Top="500"
+            Fill="#1d23cf">
+            <Ellipse.RenderTransform>
+                <TranslateTransform X="-10" Y="-10"/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+
+        <Ellipse
+            x:Name="mars"
+            Width="14"
+            Height="14"
+            Canvas.Left="662"
+            Canvas.Top="493"
+            Fill="#c70e0e"
+            />
+
+        <Ellipse
+            x:Name="jupiter"
+            Width="40"
+            Height="40"
+            Canvas.Left="718"
+            Canvas.Top="500"
+            Fill="#7d6d10">
+            <Ellipse.RenderTransform>
+                <TranslateTransform X="-20" Y="-20"/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+
+        <Ellipse
+            x:Name="saturn"
+            Width="32"
+            Height="32"
+            Canvas.Left="770"
+            Canvas.Top="500"
+            Fill="#9c731c">
+            <Ellipse.RenderTransform>
+                <TranslateTransform X="-16" Y="-16"/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+
+        <Ellipse
+            x:Name="uranus"
+            Width="28"
+            Height="28"
+            Canvas.Left="818"
+            Canvas.Top="500"
+            Fill="#2dd4eb">
+            <Ellipse.RenderTransform>
+                <TranslateTransform X="-14" Y="-14"/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+
+        <Ellipse
+            x:Name="neptune"
+            Width="22"
+            Height="22"
+            Canvas.Left="859"
+            Canvas.Top="500"
+            Fill="#061b6b">
+            <Ellipse.RenderTransform>
+                <TranslateTransform X="-11" Y="-11"/>
+            </Ellipse.RenderTransform>
+        </Ellipse>
+
+    </Canvas>
+</Window>
